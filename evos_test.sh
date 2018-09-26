@@ -1,5 +1,5 @@
 #!/bin/bash
-# evos Masternode Setup Script V1.4 for Ubuntu 16.04 LTS
+# evos Masternode Setup Script V1 for Ubuntu 16.04 LTS
 #
 # Script will attempt to autodetect primary public IP address
 # and generate masternode private key unless specified in command line
@@ -56,7 +56,17 @@ fi
 genkey=$1
 clear
 
-echo -e "${YELLOW}evos Masternode Setup Script V1.0 for Ubuntu 16.04 LTS${NC}"
+echo -e "${GREEN} ------- EVOS MASTERNODE INSTALLER v1.0.0--------+
+ |                                                  |
+ |                                                  |::
+ |       The installation will install and run      |::
+ |        the masternode under a user evos.         |::
+ |                                                  |::
+ |        This version of installer will setup      |::
+ |           fail2ban and ufw for your safety.      |::
+ |                                                  |::
+ +------------------------------------------------+::
+   ::::::::::::::::::::::::::::::::::::::::::::::::::S${NC}"
 echo "Do you want me to generate a masternode private key for you?[y/n]"
 read DOSETUP
 
